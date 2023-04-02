@@ -1,5 +1,4 @@
 import turtle
-# from turtle import *
 import time
 
 from triangle import Triangle
@@ -8,7 +7,7 @@ from triangle import Triangle
 def main():
     st = time.time()
 
-    iterations = 20000
+    NUM_OF_ITERATIONS = 20000
 
     # turtle settings and instantiation
     turtle.delay(0)
@@ -25,9 +24,11 @@ def main():
 
     # Iterate n times drawing dots in between the current dot and
     # a randomly chosen corner of the triangle.
-    for i in range(iterations):
-        #  Acceleration schedule to show points being drawn more slowly in
-        # the beginning and much more quickly (batches of 1000) towards the end
+    for i in range(NUM_OF_ITERATIONS):
+        # Acceleration schedule to show points being drawn more slowly in
+        # the beginning and much more quickly (batches of 1000) towards the end.
+        # The reason is to allow the viewer to see the algorithm clearly in the beginning
+        # but not have to wait a long time for the whole process to
         if i < 300 and i % 2 == 0:
             turtle.update()
         elif i < 1000 and i % 10 == 0:
