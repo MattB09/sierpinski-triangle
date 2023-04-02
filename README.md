@@ -5,4 +5,4 @@ Run with Python3.11
 
 `python main.py`
 
-No dependencies
+No dependencies. However, the python version must be setup with TKinter support. If not, the program cannot be run as an error will occur.
