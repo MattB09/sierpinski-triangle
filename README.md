@@ -6,3 +6,18 @@ Run with Python3.11
 `python main.py`
 
 No dependencies. However, the python version must be setup with TKinter support. If not, the program cannot be run as an error will occur.
+
+If you get an error indicating tkinter is not installed, you can follow these steps.
+
+macOS:
+```bash
+# Install Tkinter using Homebrew
+brew install tk
+
+# Set the TK_LIBRARY environment variable
+export TK_LIBRARY="/usr/local/opt/tcl-tk/lib/tk8.6"
+
+# Reinstall Python with Tkinter support
+pyenv uninstall 3.11.0
+pyenv install 3.11.0
+```
