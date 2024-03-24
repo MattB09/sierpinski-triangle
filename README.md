@@ -21,3 +21,6 @@ export TK_LIBRARY="/usr/local/opt/tcl-tk/lib/tk8.6"
 pyenv uninstall 3.11.0
 pyenv install 3.11.0
 ```
+
+## Preview
+![sierpinsky-triangle](https://github.com/MattB09/sierpinski-triangle/assets/29540686/bc1bf281-6453-4abb-baf0-c4b317f0c8be)
